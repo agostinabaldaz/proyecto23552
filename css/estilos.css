@@ -35,11 +35,8 @@
     font-family: 'Hind Madurai', sans-serif;
     font-size: 300;
 }
-
-.logo{
-    /*tamañologo*/
-}
 .logoNavegacion{
+    height: 10vh;
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -63,16 +60,14 @@
 
 }
 .botonComprarTicket{
-        border: 1px solid rgb(41, 167, 68);
-        border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;
-        background-color: rgb(41, 167, 68);
-        width: fit-content;
-        padding: 5px;
+    border: 1px solid rgb(41, 167, 68);
+    border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;
+    background-color: rgb(41, 167, 68);
+    width: fit-content;
+    padding: 5px;
 }
-
-
 #conferencia{
-    height: 700px;
+    height: 90vh;
     background: linear-gradient(to right, #00000041, #00000041) , url("../assets/img/ba1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
@@ -209,6 +204,7 @@
 }
 
 #lugarFecha{
+    height: 60vh;
     background-color: rgb(53, 58, 64);
     color: white;
     display: flex;
@@ -233,7 +229,66 @@
     width: 50%;
     border: 3px double #c0c0c0;
 }
-
+#formularioOrador{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+}
+.contenedorDatosOrador{
+    height: 80%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+.nombreyapellidoOrador{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    width: 100%;
+}
+.pieDeCuadro{
+color: grey;
+font-size: 0.7rem;
+}
+.formulario{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.cuadroNombreApellido{
+    height: 30px;
+    border: 1px solid rgb(211, 215, 221);
+    border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;
+    width: 100%;
+}
+.cuadroOrador{
+    border: 1px solid rgb(211, 215, 221);
+    border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;
+    width: 100%;
+}
+.contenedorBotonEnviarFormulario{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.botonEnviarFormulario{
+    color: white;
+    border: 1px solid rgb(150, 201, 62);
+    border-radius: 5px 5px 5px 5px;-webkit-border-radius: 5px 5px 5px 5px;-moz-border-radius: 5px 5px 5px 5px;
+    background-color: rgb(150, 201, 62);
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    justify-content: center;      
+}
 
 .aside{
     font-family: 'Hind Madurai', sans-serif;

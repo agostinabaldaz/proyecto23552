@@ -203,39 +203,37 @@
 
             <section id="formularioOrador">
                 <!-------------Titulo de la seccion---------->
-                <h2 class="contenedorTituloOradores">
-                    <div class="tituloPequeño">
-                        CONVIERTETE EN UN
-                    </div>
-                    <div class="tituloGrande">ORADOR
-                    </div>
-                </h2>
-                <p>
-                    Anótate como orador para dar una <span>charla ignite</span>. ¡Cuéntanos de qué quieres hablar!
-                </p>
+                <div class="contenedorTituloOradores">
+                    <h2>
+                        <div class="tituloPequeño">
+                            CONVIERTETE EN UN
+                        </div>
+                        <div class="tituloGrande">ORADOR
+                        </div>
+                    </h2>
+                    <p>
+                        Anótate como orador para dar una <span>charla ignite</span>. ¡Cuéntanos de qué quieres hablar!
+                    </p>
+                </div>
+               <div class="contenedorDatosOrador">
+                    <!--etiqueta form, de tipo formulario. -->
+                    <form class="formulario" action="./pages/404.html" method="get"> 
+                        <div class="nombreyapellidoOrador">
+                            <input class="cuadroNombreApellido" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
+                            <input class="cuadroNombreApellido" type="text" id="apellido" name="apellido" placeholder="Apellido" required>    
+                        </div>
 
-                <!--etiqueta form, de tipo formulario. -->
-                <form action="./pages/404.html" method="get"> 
-                    <div>
-                        <input type="text" id="nombre" name="nombre" placeholder="Nombre" required>
-                        <input type="text" id="apellido" name="apellido" placeholder="Apellido" required>    
-                    </div>
+                        <div class="contenedorCuadroOrador">
+                            <textarea class="cuadroOrador" name="comentario" id="comentario" cols="55" rows="5" placeholder="¿Sobre qué quieres hablar?" required>   </textarea>
+                        </div>
+                        <p class="pieDeCuadro">Recuerda incluir un título para tu charla</p>
 
-                    <div>
-                        <input type="email" name="email" id="email" placeholder="nombre@servidor.com">
-                        <input type="password" name="password" id="password" placeholder="contraseña">
-                    </div>
-
-                    <div>
-                        <textarea name="comentario" id="comentario" cols="55" rows="5" placeholder="¿Sobre qué quieres hablar?" required>   </textarea>
-                    </div>
-
-                    <div>
-                        <input type="reset" value="Limpiar formulario">
-                        <input type="submit" value="Enviar">
-                    </div>
- 
-                </form>
+                        <div class="cocntenedorBotonEnviarFormulario">
+                            <input class="botonEnviarFormulario" type="submit" value="Enviar">
+                        </div>
+    
+                    </form>
+               </div>
 
             </section>
 
